@@ -1,0 +1,87 @@
+.top {
+    position: fixed;
+    display: flex;
+    font-size: xx-large;
+    height: 10%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: #aaa 5px 5px, #bbb 10px 10px, #ccc 15px 15px, #ddd 20px 20px, #eee 25px 25px;
+    transition: 0.5s;
+}
+
+.top:hover {
+    box-shadow: none;
+    background-color: #ccc;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+}
+
+.dropdown-content a {
+    display: flex;
+    width: 90%; 
+    padding: 5%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000; 
+    background-image: linear-gradient(to left, #eee 50%, #ccc 50%);
+    background-size: 200% 100%; 
+    background-position: right; 
+    transition: background-position 0.5s ease-in-out; 
+}
+
+.dropdown-content a:hover {
+    background-position: left; 
+}
+
+.CategoryDropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.ProjectsDropdown:hover .dropdown-content {
+    display: block; 
+}
+
+
+body {
+    font-family: 'Calibri', sans-serif;
+}
+
+#topCategory {
+    left: 55%;
+}
+
+#topProjects {
+    left: 70%;
+}
+
+#topContact {
+    left: 85%;
+}
+
+#top {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    right: 0%;
+    top: 0%;
+}
+
+#CategoryDropdown {
+    width: 10%;
+    left: 55%;
+    top: 100%;
+}
+
+#ProjectsDropdown {
+    width: 10%;
+    left: 70%;
+    top: 100%;
+}
