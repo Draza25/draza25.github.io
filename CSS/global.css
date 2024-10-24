@@ -9,6 +9,8 @@
     cursor: pointer;
     box-shadow: #aaa 5px 5px, #bbb 10px 10px, #ccc 15px 15px, #ddd 20px 20px, #eee 25px 25px;
     transition: 0.5s;
+    z-index: 1;
+    background-color: white;
 }
 
 .top:hover {
@@ -19,36 +21,63 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    z-index: 1;
-    transition: 1s;
+    z-index: 1
 }
 
 .dropdown-content a {
     display: flex;
-    width: 90%; 
-    padding: 5%;
+    opacity: 0;
+    padding: 6%;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: #ff0000; 
+    background-color: #ff0000;
     background-image: linear-gradient(to left, #eee 50%, #ccc 50%);
-    background-size: 200% 100%; 
-    background-position: right; 
-    transition: background-position 0.5s ease-in-out; 
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position .5s ease-in-out;
 }
 
 .dropdown-content a:hover {
-    background-position: left; 
+    background-position: left;
 }
 
 .CategoryDropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
+    opacity: 1;
+    animation: fadeInItem .5s forwards;
 }
 
 .ProjectsDropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
+    opacity: 1;
+    animation: fadeInItem .5s forwards;
 }
 
+.dropdown-content a:nth-child(1) {
+    animation: fadeInItem .5s .1s forwards;
+}
+.dropdown-content a:nth-child(2) {
+    animation: fadeInItem .5s .2s forwards;
+}
+.dropdown-content a:nth-child(3) {
+    animation: fadeInItem .5s .3s forwards;
+}
+.dropdown-content a:nth-child(4) {
+    animation: fadeInItem .5s .4s forwards;
+}
+
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 body {
     font-family: 'Calibri', sans-serif;

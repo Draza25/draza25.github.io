@@ -1,0 +1,83 @@
+/*
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    opacity: 0;
+    animation: flashing 2s infinite;
+  }
+
+  @keyframes flashing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+*/
+
+#showcase {
+  position: absolute;
+  display: flex;
+  top: 25%;
+  width: 99%;
+  height: 70%;
+  overflow: hidden;
+  box-shadow: #aaa 5px 5px, #bbb 10px 10px, #ccc 15px 15px, #ddd 20px 20px, #eee 25px 25px;
+}
+
+#showOne {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  /*background-image: url(../assets/minecraft.png);*/
+  background-color: blue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 54.7% 0, 0 600%, 0 100%);
+  transition: .5s;
+}
+
+#showTwo {
+  position: absolute;
+  left: 45.5%;
+  width: 55.5%;
+  height: 100%;
+  /*background-image: url(../assets/ordta.png);*/
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 150%;
+  clip-path: polygon(100% 0, 16.25% 0, 0 100%, 100% 100%);
+  transition: .5s;
+}
+
+#showTwo:hover {
+  left: 40%;
+  width: 60.5%;
+}
+
+#showOne:hover + #showTwo{
+  left:50%
+}
+#showOne:hover{
+  width: 110%;
+}
+
+#showcaseTitle{
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 15%;
+  width: 20%;
+  height: 10%;
+  transform: translateX(-50%);
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+}
