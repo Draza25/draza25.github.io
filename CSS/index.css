@@ -22,54 +22,54 @@
 
 #showcase {
   position: absolute;
-  display: flex;
+  display: grid;
   top: 25%;
   width: 99%;
-  height: 70%;
   overflow: hidden;
   box-shadow: #aaa 5px 5px, #bbb 10px 10px, #ccc 15px 15px, #ddd 20px 20px, #eee 25px 25px;
 }
 
-#showOne {
-  position: absolute;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  /*background-image: url(../assets/minecraft.png);*/
-  background-color: blue;
-  background-size: contain;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 54.7% 0, 0 600%, 0 100%);
+.showcaseContainer {
+  --z: 10%;
+  --s: 360px;
+  --g: 0%;
+
+  gap: var(--g);
+  width: calc(2*var(--s) + var(--g));
+  grid-auto-flow: column;
+}
+
+.showcaseContainer>img {
+  width: 0;
+  min-width: calc(100% + var(--z)/2);
+  height: var(--s);
+  object-fit: contain;
+  mask: var(--mask);
+  cursor: pointer;
   transition: .5s;
 }
 
-#showTwo {
-  position: absolute;
-  left: 45.5%;
-  width: 55.5%;
-  height: 100%;
-  /*background-image: url(../assets/ordta.png);*/
-  background-color: gray;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 150%;
-  clip-path: polygon(100% 0, 16.25% 0, 0 100%, 100% 100%);
-  transition: .5s;
+.showcaseContainer>img:hover {
+  width: calc(var(--s));
 }
 
-#showTwo:hover {
-  left: 40%;
-  width: 60.5%;
+.showcaseContainer>img:first-child {
+  place-self: start;
+  clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
+  --mask:
+    conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2*var(--z)) repeat-y;
+    background-color: skyblue;
 }
 
-#showOne:hover + #showTwo{
-  left:50%
-}
-#showOne:hover{
-  width: 110%;
+.showcaseContainer>img:last-child {
+  place-self: end;
+  clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
+  --mask:
+    conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
+    background-color: #5b5b5b;
 }
 
-#showcaseTitle{
+#showcaseTitle {
   position: absolute;
   display: flex;
   left: 50%;

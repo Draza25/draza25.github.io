@@ -27,15 +27,15 @@
 .dropdown-content a {
     display: flex;
     opacity: 0;
-    padding: 6%;
+    padding: 5%;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: #ff0000;
     background-image: linear-gradient(to left, #eee 50%, #ccc 50%);
     background-size: 200% 100%;
     background-position: right;
     transition: background-position .5s ease-in-out;
+    
 }
 
 .dropdown-content a:hover {
