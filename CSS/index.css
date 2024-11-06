@@ -1,29 +1,8 @@
-/*
-.square {
-    width: 100px;
-    height: 100px;
-    background-color: #007BFF;
-    opacity: 0;
-    animation: flashing 2s infinite;
-  }
-
-  @keyframes flashing {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-*/
 
 #showcase {
   position: absolute;
   display: grid;
-  top: 25%;
+  top: 20%;
   width: 99%;
   overflow: hidden;
   box-shadow: #aaa 5px 5px, #bbb 10px 10px, #ccc 15px 15px, #ddd 20px 20px, #eee 25px 25px;
@@ -58,7 +37,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
   --mask:
     conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2*var(--z)) repeat-y;
-    background-color: skyblue;
+  background-color: #A0C4D6;
 }
 
 .showcaseContainer>img:last-child {
@@ -66,18 +45,19 @@
   clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
   --mask:
     conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
-    background-color: #5b5b5b;
+  background-color: #9b8266;
 }
 
 #showcaseTitle {
   position: absolute;
   display: flex;
   left: 50%;
-  top: 15%;
+  top: 10%;
   width: 20%;
   height: 10%;
   transform: translateX(-50%);
   font-size: xx-large;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }

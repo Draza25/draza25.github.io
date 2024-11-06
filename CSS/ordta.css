@@ -1,0 +1,19 @@
+#presentation{
+    position: absolute;
+    display: flex;
+    background-color: hotpink;
+    left: 0%;
+    width: 100%;
+    height: 300%;
+    top: 7%;
+}
+
+#ordtaShowcase{
+    position: absolute;
+    display: flex;
+    background-color: gray;
+    height: 50%;
+    width: 99%;
+    left: .5%;
+    top: .5%;
+}
