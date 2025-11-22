@@ -37,7 +37,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
   --mask:
     conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2*var(--z)) repeat-y;
-  background-color: #A0C4D6;
+  background-color: #000 /*#A0C4D6; for tfctta*/
 }
 
 .showcaseContainer>img:last-child {
@@ -52,10 +52,10 @@
   position: absolute;
   display: flex;
   left: 50%;
+  transform: translateX(-50%);
   top: 10%;
   width: 20%;
   height: 10%;
-  transform: translateX(-50%);
   font-size: xx-large;
   justify-content: center;
   align-items: center;

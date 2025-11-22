@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home | Draza's Portfolio</title>
+    <script src='../JS/mctools.js'> </script>
+    <script src='../JS/global.js'> </script>
+    <link rel="stylesheet" href="../CSS/global.css" />
+    <link rel="stylesheet" href="../CSS/mctools.css" />
+</head>
+<html>
+
+<body onload="hideAll()">
+
+    <div id="top">
+        <div id="topColor"></div>
+        <div id="topName" class="top" onclick="pageHome()">Home</div>
+        <div class="CategoryDropdown">
+            <div id="topCategory" class="top">Category</div>
+            <div id="CategoryDropdown" class="dropdown-content">
+                <a href="#">Drawing creations</a>
+                <a href="#">Writing Creations</a>
+                <a href="#">Musical creations</a>
+                <a href="#">Game Creations</a>
+                <a href="#">Other Creations</a>
+            </div>
+        </div>
+        <div class="ProjectsDropdown">
+            <div id="topProjects" class="top">Projects</div>
+            <div id="ProjectsDropdown" class="dropdown-content">
+                <a href="ordta.html">Ordta RPG</a>
+                <a href="modpacks.html">Minecraft Modpack</a>
+                <a href="mctools">Modpack Maker Tools</a>
+                <a href="#">Portfolio</a>
+            </div>
+        </div>
+        <div id="topContact" class="top">Contact</div>
+    </div>
+
+    <div id="left_bar">
+        <div>
+            <div id="text" onclick="mmMultiblock()">MM Multiblock Generator</div>
+        </div>
+    </div>
+
+    <div id="toolsBaseText">Select a tool !</div>
+
+    <div class="mmMultiblock" id="mmTitle">
+        Multiblock Generator For Masterfull Machinery
+    </div>
+    <div class="mmMultiblock">
+        <label id="fileLabel">
+            <p class="text-center" id="nbtTextFileDeposit">Deposit a NBT file here</p>
+            <input type="file" id="nbtFile" accept=".nbt">
+        </label>
+        <span id="fileName">No file selected yet</span>
+        <textarea id="output"></textarea>
+        <button id="copyBtn">Copy Script</button>
+    </div>
+
+</body>
+
+</html>

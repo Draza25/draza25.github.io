@@ -1,0 +1,114 @@
+.mmMultiblock {
+    display: flex;
+}
+
+#left_bar {
+    background-color: #00acac;
+    position: fixed;
+    display: flex;
+    top: 7%;
+    left: 0%;
+    width: 10%;
+    height: 100%;
+}
+
+#text:hover {
+    cursor: pointer;
+    background-color: #008b8b;
+}
+
+#text {
+    font-size: x-large;
+}
+
+#mmTitle {
+    position: absolute;
+    top: 8%;
+    position: absolute;
+    font-size: xx-large;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#fileDeposit {
+    position: absolute;
+    font-size: larger;
+    top: 15%;
+    left: 50%;
+    height: 15%;
+    transform: translateX(-50%);
+}
+
+#fileName {
+    position: absolute;
+    font-size: xx-large;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+input[type=file] {
+    display: none;
+}
+
+#fileLabel {
+    display: flex;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    padding: 97px 270px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: #cccccc;
+    box-shadow: #aaaa 5px 5px, #bbbb 10px 10px, #cccc 15px 15px, #dddd 20px 20px, #eeee 25px 25px;
+    border-radius: 30px;
+}
+
+#fileLabel:hover {
+    box-shadow: #aaaa 2px 2px, #bbbb 4px 4px, #cccc 6px 6px, #dddd 8px 8px, #eeee 10px 10px;
+    transition-duration: 0.25s;
+}
+
+#output {
+    position: absolute;
+    background-color: #cccccc;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 40%;
+}
+
+#nbtTextFileDeposit {
+    font-size: xx-large;
+    padding: 25px 50px;
+}
+
+#copyBtn {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    border: none;
+    cursor: pointer;
+    font-family: Adventurer;
+    font-size: xx-large;
+    padding: 25px 25px;
+    background-color: #cccccc;
+    box-shadow: #aaaa 5px 5px, #bbbb 10px 10px, #cccc 15px 15px, #dddd 20px 20px, #eeee 25px 25px;
+    border-radius: 30px;
+}
+
+#copyBtn:hover {
+    box-shadow: #aaaa 2px 2px, #bbbb 4px 4px, #cccc 6px 6px, #dddd 8px 8px, #eeee 10px 10px;
+    transition-duration: 0.25s;
+}
+
+#toolsBaseText{
+  position: absolute;
+    top: 45%;
+    position: absolute;
+    font-size: xx-large;
+    left: 50%;
+    transform: translateX(-50%);
+}
