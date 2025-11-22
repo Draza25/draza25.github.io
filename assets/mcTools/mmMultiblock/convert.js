@@ -22,7 +22,6 @@ const MULTIBLOCK_NAME = baseName
     .map(w => w.charAt(0).toUpperCase() + w.slice(1))
     .join(" ");
 
-// Lire le fichier temporaire pour le reste du script
 const buffer = fs.readFileSync(tmpFile);
 
 function getLetter(index) {

@@ -11,7 +11,7 @@ const TOOLS_DIR = path.join(__dirname, "assets", "mcTools");
 const server = http.createServer((req, res) => {
     // --- Servir les fichiers statiques ---
     if (req.method === "GET") {
-        let filePath = path.join(__dirname, req.url === "/" ? "HTML/mctools.html" : req.url);
+        let filePath = path.join(__dirname, req.url === "/" ? "HTML/index.html" : req.url);
         fs.readFile(filePath, (err, data) => {
             if (err) {
                 res.writeHead(404, { "Content-Type": "text/plain" });
